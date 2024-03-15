@@ -68,6 +68,10 @@ public class Controller implements Initializable {
         funcPane.getTabs().add(tab);
     }
 
+    public void toGitHub() {
+        util.browseRuntime("https://github.com/Dershine/BaGu");
+    }
+
     public void chooseChapter(String name) {
         for (BaGuKnowledge ba : list) {
             if (ba.getName().equals(name)) {

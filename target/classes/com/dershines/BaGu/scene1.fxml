@@ -22,34 +22,28 @@
         <menus>
           <Menu mnemonicParsing="false" text="文件">
             <items>
-              <MenuItem mnemonicParsing="false" text="上传项目" />
-                  <MenuItem mnemonicParsing="false" text="输出项目" />
+              <MenuItem mnemonicParsing="false" onAction="#createQuestionTab" text="抽取问题" />
+                  <MenuItem mnemonicParsing="false" onAction="#createAnswerTab" text="显示答案" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="选项">
             <items>
-              <MenuItem mnemonicParsing="false" text="扫描项目" />
-                  <MenuItem mnemonicParsing="false" text="注释项目" />
-                  <MenuItem mnemonicParsing="false" text="分析项目" />
-                  <MenuItem mnemonicParsing="false" text="生成项目树状图" />
-                  <Menu mnemonicParsing="false" text="输出项目树状图">
+                  <Menu mnemonicParsing="false" text="章节选择">
                     <items>
-                      <MenuItem mnemonicParsing="false" text="输出为PNG" />
-                        <MenuItem mnemonicParsing="false" text="输出为JPG" />
+                      <MenuItem mnemonicParsing="false" onAction="#createChooseTab" text="Java基础" />
+                        <MenuItem mnemonicParsing="false" onAction="#createChooseTab" text="常用框架" />
                     </items>
                   </Menu>
             </items>
           </Menu>
             <Menu mnemonicParsing="false" text="设置">
               <items>
-                <MenuItem mnemonicParsing="false" text="注释模板设置" />
-                  <MenuItem mnemonicParsing="false" text="树状图设置" />
-                  <MenuItem mnemonicParsing="false" text="项目文件夹设置" />
+                <MenuItem mnemonicParsing="false" text="无" />
               </items>
             </Menu>
           <Menu mnemonicParsing="false" text="帮助">
             <items>
-              <MenuItem mnemonicParsing="false" text="关于作者" />
+              <MenuItem mnemonicParsing="false" onAction="#createAboutDeveloperTab" text="关于作者" />
             </items>
           </Menu>
         </menus>
@@ -113,7 +107,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                            </Button>
-                           <Button fx:id="createAboutDeveloperTab" mnemonicParsing="false" prefHeight="43.0" prefWidth="247.0" style="-fx-background-color: #686767; -fx-background-radius: 15px;" text="关于作者" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                           <Button fx:id="createAboutDeveloperTab" mnemonicParsing="false" onAction="#createAboutDeveloperTab" prefHeight="43.0" prefWidth="247.0" style="-fx-background-color: #686767; -fx-background-radius: 15px;" text="关于作者" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="7">
                                <font>
                                    <Font size="16.0" />
                                </font>

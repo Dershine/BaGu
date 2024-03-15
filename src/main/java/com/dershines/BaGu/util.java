@@ -159,7 +159,7 @@ public class util {
         }
     }
 
-    private static void browseRuntime(String url) {
+    public static void browseRuntime(String url) {
         try {
             Runtime.getRuntime().exec("cmd   /c   start   " + url);
         } catch (IOException e) {
